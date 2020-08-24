@@ -1,0 +1,126 @@
+.navigation{
+    padding-top: 10px;
+    width: 100%;
+    height: 50px;
+    background-color: $color_white;
+    position: fixed;
+    margin: 0 auto;
+    z-index: 20;
+    @include m768(){
+        height: 80px;
+        padding: 0;
+    }
+    &_wrapper{
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        position: relative;
+    }
+    &_icons{
+        display: none;
+            
+        
+        @include m992(){
+            display: block;
+            padding:  0 0 0 60px;
+        img{
+           margin-right: 15px;
+            max-width: 100%;
+        }
+        }
+       .navigation_like{
+            width: 17px;
+            height: 17px;
+            background-color: #edc5c6;
+            border-radius: 100%;
+            text-align: center;
+            padding: 1px;
+            line-height: 17px;
+            font-size: $size_s;
+            color: $color_white;
+            position: absolute;
+            top: 12px;
+            left: 110px;
+    }
+        }
+    
+    &_items{
+        margin: 0 auto;
+        font-family: $font_t;
+        a{
+            color: $color_black;
+            font-size: $size_s;
+            margin-left: 15px;
+        
+            @include m992(){
+                font-size: $size_m;
+                margin-left: 30px;
+        }
+            }
+    }
+    &_menu{
+        display: none;
+        @include m768(){
+            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &_item{
+        margin-top: 10px;
+    }
+    
+    &_logo{
+        padding-left: 30px;
+    }
+    &_act{
+        a, span{
+            font-family: $font_t;
+            font-size: $size_m;
+            color: #3f3f3f;
+        }
+        img{
+            margin-left: 22px;
+        }
+        @include max768{
+            position: absolute;
+            right: 0;
+            top: 0;
+        }  
+    }
+    @include max768(){
+        .navigation_burger{
+            display: block;
+            position: relative;
+            width: 30px;
+            height: 20px;
+            span{
+                position: absolute;
+                background-color: $color_black;
+                width: 100%;
+                height: 2px;
+                left: 0;
+                top: 9px;
+            }
+            &::before,
+            &::after{
+                content: '';
+                background-color: $color_black;
+                position: absolute;
+                width: 100%;
+                height: 2px;}
+            &::before{
+                top: 0;
+            } 
+            &::after{
+                bottom: 0;
+            }
+            }
+
+    }
+    }
+    
+        
+    
+ 

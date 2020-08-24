@@ -1,0 +1,49 @@
+.footer{
+     
+    background-color: $color_black;
+    .container{
+       padding: 70px 0 0 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+       align-content: flex-start;
+        @include m768(){
+       padding: 210px 0 0 0;
+    }
+    }
+    
+    &_column{
+        flex-basis: 30%;
+        font-size: $size_m;
+        line-height: 1.5em;
+        font-family: $font_t;
+        color: #fffefe;
+        @include m768(){
+            font-size: 19px;
+        }
+        a{
+            color: #fffefe; 
+        }
+        &_contact{
+            
+            font-size: $size_m;
+            @include m768(){
+                padding-top: 80px;
+            }
+            .telegram{
+                margin-right: 11px;
+            }
+            .phone_block{
+               width: 7px;
+               height: 10px;
+                background-color: $color_white;}
+            
+        }
+        &_created{
+            padding: 30px 0 50px 0;
+            @include m768(){
+                 padding: 60px 0 100px 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.header{
+    padding-top: 50px;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    @include m768(){
+        flex-direction: row;
+        padding-top: 80px;
+    }
+    &_top{
+        flex-basis: 50%;
+        max-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    &_firstscreen{
+         background: url('img/bg/bg_1.jpg') right top/cover no-repeat;
+        position: relative;
+        .header_btn{
+            position: absolute;
+            left: 50%;
+            top: 80%;
+            padding: 15px 47px;
+            background-color: $color_white;
+            color: $color_red;
+            &:hover{
+                background-color: $color_red;
+                color: $color_white;
+            }
+            @include m768(){
+                left: 30%;
+                top: 65%;
+            }
+        }    
+    }
+    &_secondscreen{
+        background: url('img/bg/bg2.jpg') center center/cover no-repeat;
+        position: relative;
+    }
+        img{
+            position: absolute;
+            right: 5%;
+            top: 20%;
+            
+            width: 90%;
+        } 
+        
+}
+}
+
+
+
+

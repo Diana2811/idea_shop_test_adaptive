@@ -1,0 +1,91 @@
+.instagram{
+    background: url('img/bg/bg_4.jpg') center center/cover no-repeat;
+    &_wrapper{
+        
+        &_icon{
+            display: block;
+            margin: 0 auto;
+            padding: 50px 0 20px 0;
+            @include m768(){
+                padding: 107px 0 20px 0;
+            }
+        }
+        &_text{
+            margin: 0 auto;
+            max-width: 1200px;
+            text-align: center;
+            p{
+                padding: 40px 0;
+                span{
+                    color: $color_black;
+                    font-weight: 700;
+                }
+            }
+        }
+        &_slider{
+            padding-bottom: 80px;
+            &_items{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+            &_item{
+                margin-right: 5px;
+                width: 11px;
+                height: 11px;
+                border-radius: 100%;
+                background-color: $color_white;
+                &:hover{
+                   background-color: $color_black;
+                    cursor: pointer;}
+            }
+        }
+        
+    }
+    &_block{
+        position: relative;
+        &_photo{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            img{
+                max-width: 100%;
+            }
+        }
+        .instagram_labele{
+            width: 315px;
+            height:  186px;
+            background-color: rgba(255,255,255,0.45);
+           position: absolute;
+            top: 10%;
+            left: 30%;
+            @include m768(){
+                top: 20%;
+            }
+            
+            @include m992(){
+                top: 25%;
+                left: 40%;
+            }
+            &_border{
+               width: 295px;
+                height:  166px;
+                padding: 20px;
+                background-color: $color_white;
+                line-height: 1.5em;
+                font-size: $size_s;
+                transform: translate(10px,10px);
+            }
+            &_btn{
+                display: block;    
+                margin: 15px auto;
+                background-color: #edc5c6;
+                color: $color_white;
+                padding: 15px 25px;
+                &:hover{
+                    background-color:$color_red;
+                }
+            }
+        }
+        
+    }
+}

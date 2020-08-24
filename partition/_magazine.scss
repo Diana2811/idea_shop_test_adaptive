@@ -1,0 +1,48 @@
+.magazine{
+    
+    background-color: #f7f7f7;
+    .container{
+        flex-wrap: wrap;
+       align-items: center;
+        padding: 35px 0 35px 0;
+        @include m768(){
+            flex-direction: row;
+            padding: 65px 0 70px 0;
+        }
+    }
+    .title_block{
+        flex-basis: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px; 
+    }
+    &_block{
+        max-width: 357px;
+        margin: 10px auto;
+        @include m768(){
+            flex-basis: 30%;
+        }
+        @include m992(){
+            flex-basis: 30%;
+            
+        }
+        img{
+            width: 100%;
+        }
+        &_subtitle{
+            font-family: $font_t;
+            font-size: 15px;
+            font-style: italic;
+            line-height: 1.5em;
+            color: #959595;
+            text-align: center;
+        }
+        &_text{
+            margin-top: 15px;
+            text-align: center;
+            line-height: 1.5em;
+            font-size: $size_s;
+            color: $color_grey;
+        }
+    }
+}
